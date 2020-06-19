@@ -1,4 +1,7 @@
 # fish-of-the-day
+```
+https://fish-of-the-day-8d541.web.app/
+```
 
 ## Project setup
 ```
