@@ -1,0 +1,74 @@
+{
+    "storeName": "Fish-Store",
+    "inventory": [
+        {
+            "product_id": "fish1",
+            "product_name": "Pacific Halibut",
+            "product_price": 17.54,
+            "product_status": {
+                "label": "Fresh", 
+                "value": "fresh"
+            },
+            "product_description": "Everyone's favorite white fish. We will cut it to the size you require and ship it.",
+            "product_image": "fishorder-image1.jpeg"
+        },
+        {
+            "product_id": "fish2",
+            "product_name": "Lobster",
+            "product_price": 32.00,
+            "product_status": {
+                "label": "Fresh", 
+                "value": "fresh"
+            },
+            "product_description": "These tender, mouth watering beauties are a fantastic hit at any dinner party.",
+            "product_image": "fishorder-image2.jpeg"
+        },
+        {
+            "product_id": "fish3",
+            "product_name": "Sea Scallops",
+            "product_price": 16.84,
+            "product_status": {
+                "label": "Fresh", 
+                "value": "fresh"
+            },
+            "product_description": "Big, sweet and tender. True dry-pack scallops from the icey waterof Alaska. About 8-10 per pound.",
+            "product_image": "fishorder-image3.jpeg"
+        },
+        {
+            "product_id": "fish4",
+            "product_name": "Mahi Mahi",
+            "product_price": 11.28,
+            "product_status": {
+                "label": "Fresh", 
+                "value": "fresh"
+            },
+            "product_description": "Lean fish with a mild, sweet flavour profile, moderately firm texture and large moist flakes.",
+            "product_image": "fishorder-image4.jpeg"
+        },
+        {
+            "product_id": "fish5",
+            "product_name": "King Crab",
+            "product_price": 42.34,
+            "product_status": {
+                "label": "Fresh", 
+                "value": "fresh"
+            },
+            "product_description": "Crack these open and enjoy them plain or with one of our cocktail sauces",
+            "product_image": "fishorder-image5.jpeg"
+        }
+    ],
+    "cart": [
+        {
+            "product_name": "Pacific Halibut",
+            "product_price": 17.54,
+            "product_id": "fish1",
+            "product_quantity": 1
+        },
+        {
+            "product_name": "Lobster",
+            "product_price": 64.00,
+            "product_id": "fish2",
+            "product_quantity": 2
+        }
+    ]
+}

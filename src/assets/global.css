@@ -1,0 +1,47 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.toasted-container {
+  font-family: 'Proxima Nova Regular';
+}
+.toasted-container.top-center {
+  top: 0;
+}
+.toasted-container .toasted {
+  justify-content: center;
+  min-width: 300px;
+}
+
+
+@font-face {
+    font-family: 'Carrinady';
+    src: url('./fonts/carrinady.carrinady.ttf');
+}
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('./fonts/ProximaNova-Regular.ttf');
+}
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('./fonts/Proxima-Nova-Bold.ttf');
+}
+@font-face {
+  font-family: 'Proxima Nova Extra Bold';
+  src: url('./fonts/Proxima-Nova-Extrabold.ttf');
+}
+@font-face {
+  font-family: 'Archistico Simple';
+  src: url('./fonts/Archistico_Simple.ttf');
+}
+@font-face {
+  font-family: 'Archistico Bold';
+  src: url('./fonts/Archistico_Bold.ttf');
+}
+@font-face {
+  font-family: 'Phosphate Inline';
+  src: url('./fonts/PhosphateInline.ttf');
+}

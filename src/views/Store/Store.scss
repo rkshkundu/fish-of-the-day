@@ -1,0 +1,195 @@
+.fish-store {
+    &-wrapper {
+        background-color: #ffffff;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        background-image: url('../../assets/images/fish-store-bg.png');
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: center;
+        text-transform: uppercase;
+        transition: transform 0.3s linear;
+        .icon-fish {
+            height: 0.7vw;
+            width: 2vw;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.left {
+                background-image: url('../../assets/icons/icon-left-fish.png');
+            }
+            &.right {
+                background-image: url('../../assets/icons/icon-right-fish.png');
+            }
+        }
+        .icon-cart {
+            height: 1vw;
+            width: 2vw;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.fish {
+                background-image: url('../../assets/icons/icon-left-fish.png');
+                margin-right: 2vw;
+            }
+            &.cart {
+                background-image: url('../../assets/icons/icon-cart.png');
+                margin-left: 2vw;
+                height: 1.5vw;
+            }
+        } 
+    }
+    &-menu {
+        display: flex;
+        flex-basis: 38%;
+        display: block;
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            flex-basis: calc( 38% - 30px );
+            max-width: 38%;
+        }
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 15px;
+        transition: border 0.3s linear, transform 0.3s linear;
+        border-right: 2px solid #A02D60;
+        &-heading {
+            color: #dc3545;
+            font-family:'Archistico Bold';
+            text-transform: uppercase;
+            font-size: 5vw;
+            text-align: center;
+            margin: 0;
+            span {
+                color: #6B832D;
+                font-family: 'Archistico Simple';
+                font-size: 2vw;
+                display: inline-block;
+                width: 4vw;
+            }
+        }
+        &-subheading {
+            font-family: 'Phosphate Inline';
+            text-align: center;
+            color: #000000;
+            font-size: 1.1vw;
+            letter-spacing: 0.5vw;
+            font-weight: normal;
+            margin: 0;
+        }
+    }
+    &-cart {
+        display: flex;
+        flex-basis: 24%;
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            flex-basis: calc( 24% - 30px );
+            max-width: 24%;
+        }
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+        transition: border 0.3s linear, transform 0.3s linear;
+        &-heading {
+            font-family: 'Phosphate Inline';
+            text-align: center;
+            color: #000000;
+            font-size: 1.5vw;
+            letter-spacing: 0.1vw;
+            font-weight: normal;
+            margin: 0;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #A02D60;   
+            margin-bottom: 15px; 
+        }
+    }
+    &-inventory {
+        display: flex;
+        flex-basis: 38%;
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            flex-basis: calc( 38% - 30px );
+            max-width: 38%;
+        }
+        flex-direction: column;
+        padding: 15px;
+        transition: border 0.3s linear, transform 0.3s linear;
+        border-left: 2px solid #A02D60;
+        position: relative;
+        &-heading {
+            font-family: 'Phosphate Inline';
+            text-align: center;
+            color: #000000;
+            font-size: 1.5vw;
+            letter-spacing: 0.1vw;
+            font-weight: normal;
+            margin: 0;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #A02D60;
+        }
+    }
+    &-action {
+        margin-top: 20px;
+    }
+
+}
+.inventory-btn {
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background: #000000;
+    color: #ffffff;
+    padding: 3px 15px;
+    border-radius: 20px;
+    font-size: 1vw;
+    cursor: pointer;
+    width: fit-content;
+    position: absolute;
+    &.left {
+        left: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    &.right {
+        right: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    &:disabled {
+        cursor: auto;
+        background: #bababa;
+    }
+    &:focus {
+        box-shadow: 0px 0px 10px #000;
+    }
+}
+.bordered {
+    .fish-store-menu {
+        border-left: 5px solid #e7e7e7;
+        border-top: 3px solid #e7e7e7;
+        border-bottom: 2px solid #e7e7e7;
+    }
+    .fish-store-cart {
+        border-top: 2px solid #e7e7e7;
+        border-bottom: 5px solid #e7e7e7;
+    }
+    .fish-store-inventory {
+        border-top: 2px solid #e7e7e7;
+        border-right: 5px solid #e7e7e7;
+        border-bottom: 5px solid #e7e7e7;
+    }
+}
+.folded {
+    transform: scale(0.88);
+    .fish-store-menu {
+        transform: skewY(10deg);
+    }
+    .fish-store-cart {
+        transform: skewY(-15.5deg);
+    }
+    .fish-store-inventory {
+        transform: skewY(10deg);
+    }
+}

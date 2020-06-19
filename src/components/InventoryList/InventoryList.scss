@@ -1,0 +1,109 @@
+.inventory {
+    &-list {
+        margin-top: 55px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        input, input:focus, textarea, textarea:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+            width: 100%;
+            padding-left: 40px;
+            background: none;
+            font-size: 1vw;
+            min-height: 40px;
+        }
+        textarea {
+            height: 55px;
+            resize: none;
+        };
+        div {
+            position: relative;
+        }
+        &-fish {
+            &-name {
+                width: 40%;
+                float:left;
+            }
+            &-price {
+                width: calc( 20% - 2px );
+                border-left: 1px solid #000000;
+                border-right: 1px solid #000000;
+                float:left;
+            }
+            &-stock {
+                width: 40%;
+                float:left;
+            }
+            &-description {
+                width: 100%;
+                border-top: 1px solid #000000;
+                clear: both;
+            }
+            &-image {
+                width: 100%;
+                border-top: 1px solid #000000;
+            }
+        }
+        &-action {
+            border-top: 1px solid #000000;
+            text-align: center;
+            padding: 3px 0;
+            button {
+                text-transform: uppercase;
+                border: none;
+                outline: none;
+                background: #A02D60;
+                color: #ffffff;
+                padding: 3px 15px;
+                border-radius: 20px;
+                font-size: 0.8vw;
+                cursor: pointer;
+                &.save {
+                    background: #089136;
+                    margin-right: 1vw;
+                    &:disabled {
+                        cursor: auto;
+                        background: #bababa;
+                    }
+                }
+                &:focus {
+                    box-shadow: 0px 0px 10px #000;
+                }
+            }
+        }
+    } 
+    &-icon {
+        height: 2.2vh;
+        width: 2vw;
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        transform: translate(20%, -50%);
+        top: 50%;
+        left: 0;
+        &.fish {
+            background-image: url('../../assets/icons/icon-cut-fish.png');
+        }
+        &.dollar {
+            &::before {
+                content: '$';
+                color: #0f74be;
+                font-weight: bold;
+            }
+        }    
+        &.text {
+            background-image: url('../../assets/icons/icon-text.png');
+        }
+        &.image {
+            background-image: url('../../assets/icons/icon-image.png');
+        }
+        &.fishhoook {
+            background-image: url('../../assets/icons/icon-hook-fish.png');
+            right: 0;
+            left: auto;
+            width: 1.2vw;
+        }
+    }
+}

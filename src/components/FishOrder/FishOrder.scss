@@ -1,0 +1,146 @@
+.fishorder {
+    &-wrapper {
+        position: relative;
+        border: 1px solid #000000;
+        border-radius: 22px;
+        margin: 35px 0;
+        padding: 10px;
+        width: 100%;
+        display: inline-block;
+        &.sold {
+            .fishorder-soldout {
+                display: block;
+            }
+            .fishorder-price {
+                opacity: 0.4;
+            }
+        }
+    }
+    &-image {
+        height: 135px;
+        width: 135px;
+        border-radius: 10px;
+        border: 1px dotted #000000;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+        img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-details {
+        height: 100%;
+        &-name {
+            font-family: "Carrinady";
+            font-size: 2vw;
+            margin: 0;
+        }
+        &-description {
+            margin: 8px 0 0;
+            text-transform: none;
+            font: 1.1vw "Proxima Nova Regular";
+        }
+    }
+    &-count {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font: 1.1vw "Proxima Nova Regular";
+        &-changebtn {
+            outline: none;
+            border: none;
+            background: none;
+            box-shadow: none;
+            cursor: pointer;
+            height: 1vw;
+            width: 1vw;
+            margin: 0 1vw;
+            position: relative;
+            overflow: visible;
+            span {
+                &.icon-plus, &.icon-minus {
+                    &::after {
+                        content: '\002B';
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        border: 2px solid #000000;
+                        border-radius: 50%;
+                        top: 0;
+                        left: 0;
+                        font-size: 0.9vw;
+                        font-weight: bold;
+                    }
+                }
+                &.icon-minus {
+                    &::after {
+                        content: '\2013';
+                    }
+                }  
+            }
+            &:focus {
+                span {
+                    &.icon-plus, &.icon-minus {
+                        &::after {
+                            box-shadow: 0px 0px 10px #000;
+                        }
+                    }
+                }
+            } 
+        }
+        &-orderbtn {
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+            background: #000000;
+            color: #ffffff;
+            padding: 3px 15px;
+            border-radius: 20px;
+            font-size: 1vw;
+            cursor: pointer;
+            &:focus {
+                box-shadow: 0px 0px 10px #000;
+            }
+        }
+        &-number {
+            font-weight: bold;
+            font-size: 1.1vw;
+        }
+    }
+    &-price {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 80px;
+        width: 90px;
+        background: url("../../assets/images/fish.png") no-repeat;
+        background-size: contain;
+        transform: translate(10%, -45%);
+        span {
+            color: #ffffff;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            font-size: 0.7vw;
+        }
+    }
+    &-soldout {
+        background-image: url('../../assets/images/sold-out-layer.png');
+        background-color: rgba(255, 255, 255, 0.7);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 22px;
+    }
+}

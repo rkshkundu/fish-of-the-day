@@ -1,0 +1,16 @@
+{
+    "name": "fish-app",
+    "short_name": "fishapp",
+    "icons": [
+      {
+        "src": "images/fishorder-image1.jpeg",
+        "sizes": "130x130",
+        "type": "image/jpeg"
+      }
+    ],
+    "start_url": "/",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "background_color": "#ffffff",
+    "theme_color": "#e7e7e7"
+  }
